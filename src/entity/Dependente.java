@@ -6,13 +6,15 @@ public class Dependente extends Cliente{
 	private String idade;
 	
 	
+	
 	@Override
 	public String toString() {
 		return "Dependente [sexo=" + sexo + ", idade=" + idade + "]";
 	}
 
-	public Dependente(Integer idCliente, String nome, String telefone, String cpf, String sexo, String idade) {
-		super(idCliente, nome, telefone, cpf);
+	public Dependente(Integer idCliente, String nome, String sobrenome, String telefone, String cpf, String senha,
+			String email, String sexo, String idade) {
+		super(idCliente, nome, sobrenome, telefone, cpf, senha, email);
 		this.sexo = sexo;
 		this.idade = idade;
 	}
@@ -33,7 +35,6 @@ public class Dependente extends Cliente{
 	public void setIdade(String idade) {
 		this.idade = idade;
 	}
-	
 	
 	
 }
